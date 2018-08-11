@@ -1,1 +1,1 @@
-
+alert( "Visita nuestros productos en la sección \"Tienda\"." );
