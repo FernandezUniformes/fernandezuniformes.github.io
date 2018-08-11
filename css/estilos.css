@@ -1,1 +1,150 @@
+/* Estilos para FernandezUniformes */
+/* Etiquetas varias */
+* {
+	margin:0;
+	padding:0;
+}
+		
+html {
+	font-size:16px;
+}
+		
+body {
+	background:#e6e6e6;
+	font-size:16px;
+	font-family: Roboto-Bold;
+}
+		
+a {
+	color:#5BABFF;
+	text-decoration:none;
+}
+		
+.res {
+	width:100%;
+}
 
+/* Header */
+header {
+	width:100%;
+	height:8em;
+	color:#000000;
+	background:#5BABFF;
+	float:left;
+}
+		
+header img {
+	margin:1em 0;
+	margin-left:3em;
+	height:6em;
+	float:left;
+}
+		
+header nav {
+	float:right;
+	margin-right:1em;
+}
+		
+header nav ul {
+	list-style:none;
+}
+		
+header nav ul li {
+	color:#000000;
+	background:#FFF;
+	display:inline-block;
+	margin:2.5em .2em;
+	padding:1em;
+	border-radius:5em;
+}
+		
+header nav ul li a {
+	color:black;
+}
+
+/* Main */
+.main {
+	color:#000000;
+	background:#FFFFFF;
+	float:left;
+	width:65%;
+	height:23em;
+	margin:1% .5% 1% 1%;
+}
+
+/* Sidebar */
+aside {
+	margin:1% 1% 1% .5%;
+	width:32%;
+	background:#FFFFFF;
+	box-sizing:border-box;
+	height:23em;
+	float:right;
+	padding:1em;
+}
+		
+aside .sidebarelement1, .sidebarelement2 {
+	background:#e6e6e6;
+	width:100%;
+	box-sizing:border-box;
+	padding:5%;
+	border-radius:1em;
+	margin-bottom:1em;
+	float:left;
+}
+		
+aside .sidebarelement1 img {
+	margin-right:5%;
+	width:30%;
+	height:auto;
+	float:left;
+}
+		
+aside .sidebarelement1 p  {
+	width:90%
+	float:left;
+}
+		
+aside .sidebarelement2 p {
+	width:100%;
+	float:left;
+}
+
+/* Footer */
+footer {
+	color:#FFFFFF;
+	box-sizing:border-box;
+	width:100%;
+	background:#000000;
+	clear:both;
+	padding:2em;
+	text-align:center;
+}
+
+@media screen and ( max-width:600px ) and ( min-width:140px ) {
+	/* Header */
+	header {
+		height:4em;
+	}
+	
+	header img {
+		height:2em;
+		padding:1em;
+		margin:0;
+	}
+	
+	header nav {
+		display:none;
+	}
+	
+	.main {
+		width:100%;
+		margin:0;
+		height:100em;
+	}
+	
+	aside {
+		display:none;
+	}
+	
+}
