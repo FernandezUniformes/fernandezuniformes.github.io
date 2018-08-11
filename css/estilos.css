@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Estilos para FernandezUniformes */
 /* Etiquetas varias */
 * {
@@ -50,16 +51,22 @@ header nav ul {
 }
 		
 header nav ul li {
-	color:#000000;
-	background:#FFF;
 	display:inline-block;
-	margin:2.5em .2em;
-	padding:1em;
-	border-radius:5em;
+	margin:3.5em .2em;
 }
 		
 header nav ul li a {
-	color:black;
+	border-radius:5em;
+	color:#000000;
+	background:#FFFFFF;
+	padding:1em;
+	text-decoration:none;
+}
+
+header nav ul li a:hover {
+	background:#000000;
+	color:#FFFFFF;
+	transition:ease .5s all;
 }
 
 /* Main */
@@ -68,8 +75,9 @@ header nav ul li a {
 	background:#FFFFFF;
 	float:left;
 	width:65%;
-	height:23em;
+	height:50em;
 	margin:1% .5% 1% 1%;
+	box-sizing:border-box;
 }
 
 /* Sidebar */
@@ -78,36 +86,67 @@ aside {
 	width:32%;
 	background:#FFFFFF;
 	box-sizing:border-box;
-	height:23em;
+	height:50em;
 	float:right;
 	padding:1em;
 }
-		
-aside .sidebarelement1, .sidebarelement2 {
+
+/* Sidebar Icons */
+aside .faicons {
 	background:#e6e6e6;
+	box-sizing:border-box;
+	padding:1em;
+	border-radius:.1em;
+	width:100%;
+}
+
+aside .faicons .faicons-icons {
+	text-align:center;
+	margin-top:.5em;
+}
+
+aside .faicons .faicons-icons .fa.fa-whatsapp {
+	box-sizing:border-box;
+	color:#FFFFFF;
+	background:green;
+	padding:1em 1.1em;
+	border-radius:222em;
+	text-decoration:none;
+}
+
+aside .faicons .faicons-icons .fa.fa-facebook {
+	box-sizing:border-box;
+	color:#FFFFFF;
+	background:blue;
+	padding:1em 1.2em;
+	border-radius:222em;
+	text-decoration:none;
+}
+
+aside .faicons .faicons-icons .fa.fa-twitter {
+	box-sizing:border-box;
+	color:#FFFFFF;
+	background:#5BABFF;
+	padding:1em 1em;
+	border-radius:222em;
+	text-decoration:none;
+}
+
+aside .faicons .faicons-icons .fa.fa-envelope {
+	box-sizing:border-box;
+	color:#FFFFFF;
+	background:red;
+	padding:1em 1em;
+	border-radius:222em;
+	text-decoration:none;
+}
+
+aside .clientnew {
 	width:100%;
 	box-sizing:border-box;
-	padding:5%;
-	border-radius:1em;
-	margin-bottom:1em;
-	float:left;
-}
-		
-aside .sidebarelement1 img {
-	margin-right:5%;
-	width:30%;
-	height:auto;
-	float:left;
-}
-		
-aside .sidebarelement1 p  {
-	width:60%;
-	float:left;
-}
-		
-aside .sidebarelement2 p {
-	width:100%;
-	float:left;
+	margin-top:1em;
+	padding:1em;
+	background:#e6e6e6;
 }
 
 /* Footer */
@@ -128,14 +167,16 @@ footer {
 	}
 	
 	header img {
-		height:2em;
-		padding:1em;
+		height:4em;
+		padding:0;
 		margin:0;
 	}
 	
 	header nav {
 		display:none;
 	}
+	
+	
 	
 	.main {
 		width:100%;
